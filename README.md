@@ -1,4 +1,4 @@
-# Romanian Wordle (Cuvânt-le)
+# ROdle (Romanian Wordle)
 
 This is a clone project of the popular word guessing game we all know and love, but then in Romanian.
 
