@@ -8,10 +8,15 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="Regulile jocului" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal
+      title="Regulile jocului"
+      isOpen={isOpen}
+      handleClose={handleClose}
+    >
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Ghiceste cuvantul din 6 incercari. Dupa fiecare incercare, culoarea patratelor se va schimba depinzand de cat
-        de aproape ai fost de a ghici cuvantul.
+        Ghiceste cuvantul din 6 incercari. Dupa fiecare incercare, culoarea
+        patratelor se va schimba depinzand de cat de aproape ai fost de a ghici
+        cuvantul.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
