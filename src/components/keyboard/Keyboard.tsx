@@ -52,15 +52,17 @@ export const Keyboard = ({
   return (
     <div>
       <div className="flex justify-center mb-1">
-        {['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'Ș', 'Ț'].map((key) => (
-          <Key
-            value={key}
-            key={key}
-            onClick={onClick}
-            status={charStatuses[key]}
-            isRevealing={isRevealing}
-          />
-        ))}
+        {['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'Ș', 'Ț'].map(
+          (key) => (
+            <Key
+              value={key}
+              key={key}
+              onClick={onClick}
+              status={charStatuses[key]}
+              isRevealing={isRevealing}
+            />
+          )
+        )}
       </div>
       <div className="flex justify-center mb-1">
         {['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Â', 'Î'].map((key) => (
