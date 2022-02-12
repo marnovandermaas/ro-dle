@@ -36,11 +36,11 @@ answers = set()
 for line in csvFile:
     word = line[1]
     if len(word) == 5:
-        answers.add(word.lower().replace('ă', 'a')
+        answers.add(word.lower().replace('ă', 'a'))
 
 # Output wordlist.ts
 answerfile = open('wordlist.ts', 'w')
-wordfile.write('export const WORDS = [\n')
+answerfile.write('export const WORDS = [\n')
 for word in answers:
     answerfile.write("  '" + word + "',\n")
 answerfile.write(']\n')
