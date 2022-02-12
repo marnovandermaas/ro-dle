@@ -1,24 +1,27 @@
 wordfile = open('nohyphen.ro.txt')
-outfile = open('noabreve.ro.txt', 'w')
 
 words = []
-
 for line in wordfile.readlines():
     words.append(line[0:5].lower())
 
 total = 0
 alreadyin = 0
+guesses = set()
 for word in words:
+    newword = word
     if 'ă' in word:
         total += 1
-        if word.replace('ă', 'a') not in words:
-            print('+' + word)
-            outfile.write(word.replace('ă', 'a') + '\n')
-        else:
-            print('-' + word)
+        newword = word.replace('ă', 'a')
+        if newword in words:
             alreadyin += 1
-    else:
-        outfile.write(word + '\n')
+            continue
+    guesses.add(newword)
 
 print('Total words with ă is ' + str(total) + ' of which ' + str(alreadyin) + ' exist already in the list when substituting with a.')
+
+guessfile = open('validGuesses.ts', 'w')
+guessfile.write('export const VALID_GUESSES = [\n')
+for word in sorted(guesses):
+    guessfile.write("  '" + word + "',\n")
+guessfile.write(']\n')
 
