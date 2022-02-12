@@ -1,6 +1,6 @@
 {
-  "short_name": "Game",
-  "name": "Game",
+  "short_name": "ROdle",
+  "name": "Romanian Wordle",
   "icons": [
     {
       "src": "favicon.ico",
