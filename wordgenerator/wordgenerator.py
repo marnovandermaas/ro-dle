@@ -25,3 +25,11 @@ for word in sorted(guesses):
     guessfile.write("  '" + word + "',\n")
 guessfile.write(']\n')
 
+import csv
+commonfile = open('2000MostCommonRomanianWords.csv')
+csvFile = csv.reader(commonfile)
+for line in csvFile:
+    word = line[1]
+    if len(word) == 5:
+        print(word)
+
