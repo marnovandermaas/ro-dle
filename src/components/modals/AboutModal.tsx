@@ -12,7 +12,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
         Aceasta este o versiune open source a jocului de ghicit cuvinte pe care il stim
         si il iubim cu totii -{' '}
         <a
-          href="https://github.com/cwackerfuss/react-wordle"
+          href="https://github.com/marnovandermaas/ro-dle"
           className="underline font-bold"
         >
           codul poate fi gasit aici
