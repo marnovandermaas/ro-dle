@@ -1,5 +1,7 @@
 # ROdle (Romanian Wordle)
 
+**Mainly left here for archival purposes.**
+
 This is a clone project of the popular word guessing game we all know and love, but then in Romanian.
 The code is based off of [this repository](https://github.com/cwackerfuss/react-wordle).
 
